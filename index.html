@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My resume</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Exo+2|Alegreya+Sans" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<style>
+		body,html
+		{
+			/*background-color: #EEEEEE;*/
+			height: 100%;
+		}
+
+		.bg
+		{
+			background-image: url(image/background.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			height: 100%;
+			margin-bottom: 2px;
+		}
+
+		h4
+		{
+			font-family: 'Exo 2', sans-serif;
+		}
+
+		p
+		{
+			font-family: 'Alegreya Sans', sans-serif;
+			font-size: 17px;
+		}
+
+		.portfolio
+		{
+			display: none;
+		}
+
+		.portfolio:hover
+		{
+			cursor: pointer;
+		}
+
+		@media screen and (max-width: 1520px)
+		{
+			.bg
+			{
+				height: auto;				
+			}
+			
+		}
+
+		@media screen and (max-width: 418px)
+		{
+			p
+			{
+				float: right;
+			}
+
+			#close h1
+			{
+				font-size: 17px;
+			}
+
+			#close button
+			{
+				position: relative;
+				right: 20px;
+			}
+
+		}
+	</style>
+</head>
+<body>
+	<script src="jquery.js"></script>
+	<script src="index.js"></script>
+
+	<div class="w3-bar" style="height: 50px;padding: 7px;background-color: black;color: white">
+		<a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+	</div> <!--top nav bar-->
+
+<div class="bg">
+	<div class="w3-container">
+		
+		<div class="w3-row-padding" style="margin-top: 100px">
+			
+			<div class="w3-third">
+				
+				<div class="w3-card-4" style="margin-bottom: 10px">
+					
+					<header class="w3-container" style="background-color: #2C3E50;color: white">
+						<h2>Introduce</h2>
+					</header>
+
+					<div class="w3-container w3-white">						
+						
+						<img src="image/myself.jpg" alt="My profile" class="w3-left w3-margin w3-image" style="width: 150px">
+						<p>My name is Vong Nyuk Soon,a student who is majoring in Diploma of Computer Science at Southern University College.</p>
+
+					</div>								
+
+					
+
+					<div class="w3-bar" style="background-color: #22313F;color: white">
+						
+						<i class="fa fa-home w3-xxlarge w3-margin"></i>
+						<span>Gelang Patah,Johor</span>
+
+					</div>
+
+					<div class="w3-bar" style="background-color: #2C3E50;color: lime">
+
+						<i class="fa fa-phone w3-xxlarge w3-margin"></i>
+						<span>012-3456789</span>
+
+					</div>
+
+					<div class="w3-container w3-bar w3-white">
+						
+						<h2 class="w3-margin"><i class="fa fa-graduation-cap"></i> Education</h2>						
+						<ul>
+							<li>SMK Taman Nusajaya<span style="color: green;"> Graduated</span></li>
+							<li>Southern University College<span style="color: orange;"> Haven't graduated yet</li>
+						</ul>
+						<span class="w3-margin">Progress bar from graduating:</span>
+						
+						<div class="w3-light-gray w3-round-xlarge w3-margin">							
+							<div class="w3-container w3-round-xlarge w3-indigo w3-center" style="width: 20%">20%
+							</div>
+						</div>	
+
+					</div>
+					
+				</div> <!--  w3-card-4  -->
+			</div> <!--  w3-third -->
+			
+			<div class="w3-twothird">
+				
+				<div class="w3-card-4" style="margin-bottom: 10px;">
+					
+					<div class="w3-container" style="background-color: #34495E;color:white">
+						<h3>Skills</h3>
+					</div>
+					
+					<div class="w3-bar w3-white">
+						
+						<div class="w3-container">
+						<img src="image/java.png" alt="java" class="w3-circle w3-left w3-margin" style="width: 75px">
+						<h4>Java</h4>
+						<p>Java,a programming language which is the one of the popular language nowadays.</p>
+						</div>					
+						
+						<div class="w3-container">
+							<img src="image/html.png" alt="HTML" class="w3-circle w3-left w3-margin" style="width: 75px">
+							<h4>HTML</h4>
+							<p>HyperText Markup Language (HTML), a language that used to build a website.</p>
+						</div>
+
+						<div class="w3-container">
+							<img src="image/css.png" alt="CSS" class="w3-circle w3-left w3-margin" style="width: 75px">
+							<h4>CSS</h4>
+							<p>Cascading Style Sheets (CSS),used to design a website.</p>
+						</div>					
+
+						<div class="w3-container">
+							<img src="image/photoshop.png" alt="photoshop" class="w3-circle w3-left w3-margin" style="width: 75px">
+							<h4>Adobe Photoshop CC</h4>
+							<p>Adobe Photoshop CC is also one of the popular software in editing picture.</p>
+						</div>
+
+						<div class="w3-container">
+							<img src="image/flash.png" alt="flash" class="w3-circle w3-left w3-margin" style="width: 75px">
+							<h4>Macromedia Flash 8</h4>
+							<p>A software that make animations,rich internet application,desktop applications,mobile applications,mobile games and more.</p>
+						</div>
+
+					</div> <!--  w3-bar w3-light-gray " --> 
+
+				</div> <!--  w3-card-4 -->
+
+			</div>	<!-- w3-twothird -->	
+
+		</div> <!--   w3-row-padding  -->	
+
+	</div> <!--  w3-container w3-margin  -->
+	
+</div> <!--bg-->
+
+
+<!--------------------------------------------------- Portfolio ----------------------------------------------------->
+<div id="close">		
+		<div class="w3-bar w3-black" style="padding: 100px;">
+			<h1>Feel free to have a look at my portfolio?</h1>
+			<button class="w3-btn w3-hover-white w3-padding-large w3-round-large w3-light-grey w3-margin" id="show" onclick="removeElement()">Yes</button>
+			<button class="w3-btn w3-hover-white w3-padding-large w3-round-large w3-margin w3-light-grey" onclick="alert('Thank you for viewing my resume. =) ')">No,thank you.</button>
+		</div>
+</div>
+
+		
+		<div class="portfolio">			
+
+			<a href="#">
+			<img src="image/portfoliotest3.jpg" style="width: 100%"></a> 
+
+		</div>
+						
+
+
+<!-------------------------------------------------------- Footer --------------------------------------------------------->
+
+
+	<div class="w3-container w3-black" style="position: relative;bottom: 0;width: 100%;height: 131px;margin-top: 1px">
+				
+					<div style="text-align: center;margin-top: 30px;>
+					<p style="color:white;">Contact me by:</p>
+					<i class="fa fa-google w3-xxlarge"></i>
+					<i class="fa fa-facebook-official w3-xxlarge"></i>
+					</div>
+				
+	</div>
+
+
+
+</body>
+</html>
