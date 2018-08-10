@@ -15,12 +15,22 @@
 
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Headland+One" rel="stylesheet">
+
+	<!-- 
+	Google Font usage
+
+	Libre+Basker // top nav 
+	Headland+One // image-text
+
+	-->
+
 </head>
 <body>
 
 
 <script src="myFood.js"></script>
-
+<script src="jquery.js"></script>
 <!------------------------------------------------------------- Top Navbar------------------------------------------------>
 
 
@@ -48,10 +58,43 @@
 	<a href="javascript:void(0);" class="icon" onclick="openHamburger()"><i class="fa fa-bars"></i></a>
 </div>
 
-<div class="w3-content w3-section" style="max-width: 100%;">
-	<img src="image/bigimage.jpg" class="w3-animate-right" style="width: 100%;margin-top: -16px">
+
+<!-----------------------------------Image 1----------------------------->
+<div class="page-container">
+
+<div class="slideshow-container">
+	<img src="image/bigimage.jpg"style="width: 100%;">
+	<div class="slide-content">
+		<h1>Discover Malaysia's food</h1>
+		<button><a href="#">Explore now!</a></button>
+	</div>
 </div>
 
+
+<!------------------------------------Permission--------------------------->
+
+<h2 class="permission">Before you explore for more...</h2>
+
+
+
+<!------------------------------------Sign up/in form--------------------->
+
+<div class="row">
+	<div class="column left">
+		<p class="ask">Would you like to...</p>
+		<button><a href="#">Sign up?</a></button>
+	</div>
+	<div class="column right">
+		<p class="ask">Or...</p>
+		<button><a href="login.html">Sign in?</a></button>
+	</div>
+</div>
+
+
+
 <a href="login.html">LOGIN</a>
+
+</div> <!-- page container -->
+
 </body>
 </html>

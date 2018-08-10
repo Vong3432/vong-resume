@@ -1,7 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 body
 {
-	height: 3000px; /* Used to enable scrolling */
-  background: linear-gradient(180deg, lightsteelblue 30%, mediumspringgreen 50%, steelblue 85%);
+	height: auto;
+  	background-color: black;
+}
+
+.page-container
+{
+	margin-left: 1%;
+	margin-right: 1%;
 }
 
 .topnav
@@ -17,7 +27,7 @@ body
 
 .topnav a
 {
-
+	font-family: 'Libre Baskerville', serif;
 	float: left;
 	display: block;
 	color: grey;
@@ -25,6 +35,7 @@ body
 	padding: 13px;
 	text-decoration:none;
 	font-size: 16px;
+	margin-bottom: 2px;
 }
 
 .topnav img
@@ -73,9 +84,10 @@ body
 
 .food-content a
 {
+	margin: -1px;
 	float: none;
 	color: black;
-	color: white;
+	color: white;	
 	padding: 16px;
 	text-decoration: none;
 	display: block;
@@ -90,6 +102,7 @@ body
 .food-dropdown:hover .food-content
 {
 	display: block;
+	position: fixed;
 }
 
 .food-dropdown .foodbtn i
@@ -139,6 +152,115 @@ body
 	color: black;
 }
 
+.slideshow-container
+{
+	position: relative;
+	margin-top: 100px;
+	text-align: left;
+	color: white;
+}
+
+.slide-content h1
+{
+	font-family: 'Headland One', serif;
+	margin-left: 30px;	
+}
+
+.slide-content a
+{
+	text-decoration: none;		
+}
+
+.slide-content button
+{
+	margin-left: 30px;
+	padding: 12px;
+	background: rgba(0,0,0,0.8);
+	border-color: black;
+	color: white;
+}
+
+.slide-content button:hover
+{
+	background: rgba(0,0,0,0.5);
+}
+
+.slideshow-container .slide-content
+{
+	position: absolute;
+	top: 5%;
+	left: 1%;
+	background: rgba(0,0,0,0.5);
+	color: white;
+	width: 35%;		
+	font-size: 20px;
+	padding: 17px;
+	font-family: 'Headland One', serif;
+}
+
+.permission
+{
+	color: white;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 15%;
+	margin-bottom: 15%;
+}
+
+.column
+{
+	float: left;	
+	width: 50%;	
+	height:500px;
+	background-color: white;
+}
+
+.column.left
+{	
+	text-align: center;
+	color: black;
+	border-right: solid;
+}
+
+.column.left button,.column.right button
+{
+	background:rgba(0,0,0,1);
+	color: white;
+	border: none;
+	padding: 17px;
+}
+
+.column.left button a,.column.right button a
+{
+	text-decoration: none;
+}
+
+.column.left button:hover,.column.right button:hover
+{
+	background: rgba(0,0,0,0.7);
+	color: gold;
+	transition: 1s;
+}
+
+.column.right
+{
+	text-align: center;	
+}
+
+.ask
+{
+	text-align: center;
+	margin-top: 200px;
+	margin-left: 15px;
+	font-size: 25px;
+}
+
+.row:after
+{
+	content: "";
+	clear: both;
+	display: table;
+}
 
 @-webkit-keyframes todown
 {
@@ -159,6 +281,53 @@ body
     float: right;
     display: block;
   }
+  
+  .column
+  {
+  	width: 100%;
+  }
+
+  .column.left
+  {
+  	border-right: none;
+  	border-bottom: solid;
+  }
+}
+
+@media screen and (max-width: 1085px)
+{
+	.slideshow-container {
+    position: relative; 
+    max-width: 100%; /* Maximum width */   
+    margin-top: 0;
+}
+
+	.slideshow-container .slide-content {
+    position: relative; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    left: 0;
+    background: rgba(255, 255, 255, 0.1);    
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+    font-size: 15px;
+}
+    .slideshow-container .slide-content h1
+    {
+    	font-size: 20px;    
+    	margin-left: 0;	
+    }
+
+    .slide-content button
+    {
+    	margin-left: 0;
+
+    }
+
+    .permission
+    {
+    	margin-right: 15%;
+    	margin-left: 25%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -171,7 +340,6 @@ body
   }
   
   .topnav.responsive a,.topnav img{
-    transition: 1s;
     display: block;
     float: none;    
   }  
