@@ -201,10 +201,11 @@ body
 .permission
 {
 	color: white;
-	margin-left: 35%;
-	margin-right: 35%;
+	margin-left: 37.7%;
+	margin-right: 25%;
 	margin-top: 15%;
 	margin-bottom: 15%;
+
 }
 
 .column
@@ -245,15 +246,19 @@ body
 .column.right
 {
 	text-align: center;	
+
 }
 
 .ask
 {
-	text-align: center;
-	margin-top: 200px;
-	margin-left: 15px;
-	font-size: 25px;
+	text-align: left;
+	color: lime;
+	background: rgba(0,0,0,0.8);
+	padding: 20px;
+	margin-top: 10px;	
+
 }
+
 
 .row:after
 {
@@ -282,6 +287,11 @@ body
     display: block;
   }
   
+  .topnav
+  {
+  	position: static;
+  }
+
   .column
   {
   	width: 100%;
@@ -290,8 +300,9 @@ body
   .column.left
   {
   	border-right: none;
-  	border-bottom: solid;
+  	border-bottom: solid;  	
   }
+
 }
 
 @media screen and (max-width: 1085px)
@@ -326,7 +337,7 @@ body
     .permission
     {
     	margin-right: 15%;
-    	margin-left: 25%;
+    	margin-left: 30%;
     }
 }
 
