@@ -1,8 +1,7 @@
-<?php include('server.php');?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sign Up</title>
+	<title>Login</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
 
@@ -96,28 +95,9 @@
 			content: "✖";
 		}
 
-		.login
+		.signup
 		{
 			text-align: center;
-		}
-
-		.error
-		{
-			margin:0px auto;
-			padding: 10px;
-			color: red;
-			font-size: 15px;
-			border:1px solid #a94442;
-			background-color: #f2dede;
-			font-weight: bolder;
-			border-radius: 5px;
-			text-align: center;
-			width: 50%;
-		}
-
-		.error p
-		{
-			margin-left: 25px;
 		}
 
 		@media screen and (max-width: 600px)
@@ -125,10 +105,6 @@
 			form
 			{
 				width: 100%;
-			}
-			.error p
-			{
-				margin-left: 0;
 			}
 		}
 	</style>
@@ -142,30 +118,23 @@
 	</a>
 </div>
 
-	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+	<form action="signup.php" method="POST">
 		<div class="form-container">
 
 			<!------------------------------------------------ Form title --------------------------------------->
-			<h1 style="text-align: center;position: relative;top: 10px;">Sign up</h1>
+			<h1 style="text-align: center;position: relative;top: 10px;">Sign in</h1>
 			<hr>
 			<br>
 			
-			<!-- Display validation erros -->
-			<?php include('errors.php');?>
-
 			<!----------------------------------------------- Account ----------------------------------------------->
 			<label for="account">Your account: </label>
-			<input type="text" name="account">
+			<input type="text" name="account" required>
 			<br>
 
 			<!------------------------------------------------ Password---------------------------------------->
-			<label for="pass2">Password: </label>
-			<input type="password" id="psw" maxlength="16" pattern="(?=.*[a-z]).{8,}"name="pass">
-
-			<!--------------------------------------------Password confirm--------------------------------------->
-			<label for="pass2">Confirm Password: </label>
-			<input type="password" id="psw2" maxlength="16" pattern="(?=.*[a-z]).{8,}"name="pass2">
-
+			<label for="pass">Password: </label>
+			<input type="password" id="psw" maxlength="16" pattern="(?=.*[a-z]).{8,}"name="pass" required>
+			
 			<!--------------------------------------- Message during user input password -------------------------->
 			<div id="message">
 				<h3>Password must contain:</h3>
@@ -174,12 +143,12 @@
 			</div>
 
 
-			<!----------------------------------------------------- signup ----------------------------------------->
-			<button type="submit" class="signupbtn" name="signup">Sign up</button>
+			<!----------------------------------------------------- Login ----------------------------------------->
+			<button type="submit" class="signupbtn">Sign in</button>
 
-			<!----------------------------------------------------- signup ---------------------------------------->
-			<div class="login">
-				<a href="login.php>">Already have an account? Sign in now!</a>
+			<!----------------------------------------------------- Sign up ---------------------------------------->
+			<div class="signup">
+				<a href="signup.php>">Don't have an account? Sign up now!</a>
 			</div>
 
 
