@@ -41,15 +41,15 @@
 
 			mysqli_query($db,$sql);
 			$_SESSION['username'] = $username;
-			$_SESSON['success'] = "You are now logged in";
+			$_SESSION['success'] = "You are now logged in";
 			header('location: loginsuccess.php');
 		}
 		
 		//log user in from login page
 		if(isset($_POST['login']))
 		{
-			$username = mysqli_real_escape_string($db,$_POST['account']);			
-			$password = mysqli_real_escape_string($db,$_POST['password']);	
+			$username = mysql_real_escape_string($_POST['username']);			
+			$password = mysql_real_escape_string($_POST['password']);	
 
 			//if got empty
 			if(empty($username))	
@@ -69,17 +69,17 @@
 				$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
 
 				$result = mysqli_query($db,$query);
-				if(mysqli_num_rows($result) ==1 )
+				if(mysqli_num_rows($result) == 1)
 				{
 					//log user in
 					$_SESSION['username'] = $username;
-				$_SESSON['success'] = "You are now logged in";
-				header('location: loginsuccess.php');
+				    $_SESSION['success'] = "You are now logged in";
+				    header('location: loginsuccess.php');
 				}
 
 				else
 				{
-					array_push($errors, "Wrong username / password")header('location:login.php');
+					array_push($errors, "Wrong username / password");
 				}
 			}
 		}

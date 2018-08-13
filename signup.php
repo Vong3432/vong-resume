@@ -152,6 +152,7 @@
 			
 			<!-- Display validation erros -->
 			<?php include('errors.php');?>
+		
 
 			<!----------------------------------------------- Account ----------------------------------------------->
 			<label for="account">Your account: </label>
@@ -179,7 +180,7 @@
 
 			<!----------------------------------------------------- signup ---------------------------------------->
 			<div class="login">
-				<a href="login.php>">Already have an account? Sign in now!</a>
+				<a href="http://192.168.1.108:8081/vong-resume/login.php>">Already have an account? Sign in now!</a>
 			</div>
 
 

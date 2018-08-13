@@ -1,3 +1,4 @@
+<?php include('server.php');?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -118,7 +119,9 @@
 	</a>
 </div>
 
-	<form action="signup.php" method="POST">
+	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+		<!-- Display validation erros -->
+		<?php include('errors.php');?>
 		<div class="form-container">
 
 			<!------------------------------------------------ Form title --------------------------------------->
@@ -128,12 +131,12 @@
 			
 			<!----------------------------------------------- Account ----------------------------------------------->
 			<label for="account">Your account: </label>
-			<input type="text" name="account" required>
+			<input type="text" name="account">
 			<br>
 
 			<!------------------------------------------------ Password---------------------------------------->
 			<label for="pass">Password: </label>
-			<input type="password" id="psw" maxlength="16" pattern="(?=.*[a-z]).{8,}"name="pass" required>
+			<input type="password" id="psw" maxlength="16" pattern="(?=.*[a-z]).{8,}"name="password">
 			
 			<!--------------------------------------- Message during user input password -------------------------->
 			<div id="message">
@@ -144,7 +147,7 @@
 
 
 			<!----------------------------------------------------- Login ----------------------------------------->
-			<button type="submit" class="signupbtn">Sign in</button>
+			<button type="submit" class="signupbtn" name="login">Sign in</button>
 
 			<!----------------------------------------------------- Sign up ---------------------------------------->
 			<div class="signup">
