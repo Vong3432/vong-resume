@@ -1,39 +1,43 @@
 body
 {
-	background-color: black;
-	height: 100%;
-	margin: 0;
+	background-color: white;
+	height: 3000px;
 }
 
-
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/myself.jpg");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-
-}
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-.hero-text h1
+.page-container
 {
-	font-weight: bold;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+.middle
+{
+
+	text-align:center;	
+	color: white;
+	position: relative;
+	bottom: 400px;
 }
 
+.middle p
+{
+	font-size: 35px;
+}
+
+hr
+{	
+	width: 40%;
+	position: absolute;
+	left: 30%;
+	top: 40%;
+}
 @media screen and (max-width: 600px)
 {
-	.hero-image
+	.middle
 	{
-		margin-top: 100px;
+		position: absolute;
+		top: 20%;
+		left: 0;
+		transition: translate(-20%,0%);
 	}
 }
+
