@@ -136,7 +136,7 @@
 <body>
 
 <div class="top-logo">
-	<a href="malaysiaFood.html">
+	<a href="https://vong3432.github.io/vong-resume/malaysiaFood.html">
 	<img src="image/logo.png" style="display: block;
 	margin-left: auto;margin-right: auto;width: 100px;position: relative;top: 60px;">
 	</a>

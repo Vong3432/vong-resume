@@ -5,7 +5,7 @@
 	$errors = array();
 
 	//connect to database
-	$db = mysqli_connect('localhost','root','','register');
+	$db = mysqli_connect('localhost','','register');
 
 	// if sign up btn is clicked
 	if (isset($_POST['signup']))
@@ -48,8 +48,8 @@
 		//log user in from login page
 		if(isset($_POST['login']))
 		{
-			$username = mysql_real_escape_string($_POST['username']);			
-			$password = mysql_real_escape_string($_POST['password']);	
+			$username = mysqli_real_escape_string($db,$_POST['account']);
+		    $password1 = mysqli_real_escape_string($db,$_POST['pass']);	
 
 			//if got empty
 			if(empty($username))	
@@ -57,16 +57,16 @@
 				array_push($errors,"Username is required");//add errors to array
 
 			}
-			if(empty($password))
+			if(empty($password1))
 			{
-				array_push($errors, "Password required");
+				array_push($errors,"Password required");
 			}
 
 			if(count($errors) == 0)
 			{
-				$password = md5($password); // encrypt password
+				$password = md5($password1); // encrypt password
 
-				$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+				$query = "SELECT * FROM users WHERE username='$username'AND password='$password'";
 
 				$result = mysqli_query($db,$query);
 				if(mysqli_num_rows($result) == 1)
@@ -79,7 +79,7 @@
 
 				else
 				{
-					array_push($errors, "Wrong username / password");
+					array_push($errors, "Wrong username / password");					
 				}
 			}
 		}

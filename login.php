@@ -57,7 +57,7 @@
 			margin: 3px;
 		}
 
-		.signupbtn
+		.loginbtn
 		{
 			margin-left: auto;
 			margin-right: auto;
@@ -113,7 +113,7 @@
 <body>
 
 <div class="top-logo">
-	<a href="malaysiaFood.html">
+	<a href="https://vong3432.github.io/vong-resume/malaysiaFood.html">
 	<img src="image/logo.png" style="display: block;
 	margin-left: auto;margin-right: auto;width: 100px;position: relative;top: 60px;">
 	</a>
@@ -122,6 +122,7 @@
 	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 		<!-- Display validation erros -->
 		<?php include('errors.php');?>
+
 		<div class="form-container">
 
 			<!------------------------------------------------ Form title --------------------------------------->
@@ -136,7 +137,7 @@
 
 			<!------------------------------------------------ Password---------------------------------------->
 			<label for="pass">Password: </label>
-			<input type="password" id="psw" maxlength="16" pattern="(?=.*[a-z]).{8,}"name="password">
+			<input type="password" id="psw" maxlength="16" pattern="(?=.*[a-z]).{8,}" name="pass">
 			
 			<!--------------------------------------- Message during user input password -------------------------->
 			<div id="message">
@@ -147,7 +148,7 @@
 
 
 			<!----------------------------------------------------- Login ----------------------------------------->
-			<button type="submit" class="signupbtn" name="login">Sign in</button>
+			<button type="submit" class="loginbtn" name="login">Sign in</button>
 
 			<!----------------------------------------------------- Sign up ---------------------------------------->
 			<div class="signup">
