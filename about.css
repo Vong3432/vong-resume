@@ -15,29 +15,107 @@ body
 	text-align:center;	
 	color: white;
 	position: relative;
-	bottom: 400px;
+	bottom: 500px;
 }
 
 .middle p
 {
 	font-size: 35px;
+	font-family: 'Lekton', sans-serif;
+}
+
+.middle h1
+{
+	font-family: 'Permanent Marker', cursive;
+	color: white;
 }
 
 hr
 {	
-	width: 40%;
+	width: 40%;	
 	position: absolute;
+	top: 30%;
 	left: 30%;
-	top: 40%;
 }
+
+.about
+{
+	position: relative;
+	top: 150px;
+	height: 300px;
+}
+
+.about h1
+{
+	font-family: 'Cinzel', serif;
+	font-size: 70px;
+	position: relative;
+	text-align: center;
+}
+
+.about-describe
+{
+	position: relative;	
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+.feature-container
+{
+	background-color: #BDC3C7;
+	height: 1000px;
+	position: relative;
+	top: 450px;
+}
+
+.feature-container h1
+{
+	font-family: 'Cinzel', serif;
+	font-size: 90px;
+	position: relative;
+	top: 130px;
+	text-align: center;
+	color: black;
+}
+
 @media screen and (max-width: 600px)
 {
-	.middle
+	.middle p 
 	{
-		position: absolute;
-		top: 20%;
-		left: 0;
-		transition: translate(-20%,0%);
+		font-size: 25px;
+	}
+
+	.middle h1
+	{
+		font-size: 20px;
+	}
+
+	.middle p,.middle h1
+	{
+		
+		position: relative;
+		bottom: -100px;
+	}
+
+	hr
+	{
+		width: 40%;	
+		position: relative;
+		bottom: -100px;
+	}
+
+	.about-describe
+	{
+
+		position: relative;		
+		text-align: center;		
+		font-size: 30px;
+	}
+
+	.feature-container h1
+	{
+		font-size: 60px;
 	}
 }
 
