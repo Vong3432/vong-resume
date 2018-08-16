@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	 <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- Icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Mobile friendly -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+
+	<style>
+		body
+		{
+			background-color: #ECF0F1;
+		}
+		
+		#message
+		{
+			margin-left: 5%;
+		}
+
+		.confirm-button
+		{
+			margin-top: 10%;
+			text-align: center;	
+			position: relative;			
+		}
+
+		.signupbtn
+		{
+			border-style: none;
+			background-color: #ECF0F1;
+			border-bottom: 3px solid;
+			padding: 15px;
+			font-size: 30px;
+		}
+
+		.signupbtn:hover
+		{
+			transition: 0.5s;
+			border-bottom: 3px solid #36D7B7;
+			color: #36D7B7;
+			cursor: pointer;
+		}
+
+
+		@media screen and (max-width: 600px)
+		{
+			.confirm-button
+			{
+				position: relative;
+				left: 0;
+				text-align: center;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+<!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+<h1 style="text-align: center;font-family: 'Source Serif Pro', serif;margin-top:5%;">Sign Up</h1>
+
+<div class="row" style="width: 60%">
+	<form class="col s12">
+		<div class="row">
+			<div class="input-field col s12">
+				<i class="fa fa-address-card-o prefix"></i>
+				<input type="text" id="icon_prefix" class="validate" required>
+				<label for="icon_prefix">Username</label>
+			</div>
+		</div>
+			
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="fa fa-lock prefix"></i>
+					<input type="password" id="password" class="validate" onkeyup='check();' required>
+					<label for="password">Password</label>
+					<span class="helper-text" data-error="Minimum length : 8 " data-success="Right"></span>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s12">
+					<i class="fa fa-lock prefix"></i>
+					<input type="password" id="password2" class="validate" onkeyup='check();'  required>
+					<label for="password2">Re-enter password</label>
+				</div>
+
+				<!--------------------------------------- Message during user input password -------------------------->
+				<div id="message"></div>
+			</div>
+
+			<div class="row">
+		        <div class="input-field col s12">
+		          <i class="fa fa-envelope-o prefix"></i>
+		          <input id="email" type="email" class="validate" required>
+		          <label for="email">Email</label>
+
+		        </div>
+      		</div>
+			
+			<div class="confirm-button">
+				<button type="submit" class="signupbtn" name="signup">Submit</button>
+			</div>
+	</form>
+</div>
+
+<script>
+	var check = function() {
+	  if (document.getElementById('password').value == document.getElementById('password2').value)
+	   {
+		    document.getElementById('message').style.color = 'green';
+		    document.getElementById('message').innerHTML = ' ✔ Password is matched';
+	   } 
+
+	   else 
+	   {
+		    document.getElementById('message').style.color = 'red';
+		    document.getElementById('message').innerHTML = ' ✖ Password is not matched';
+	   }
+}
+
+</script>
+</body>
+</html>
