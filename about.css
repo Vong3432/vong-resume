@@ -1,7 +1,7 @@
 body
 {
 	background-color: white;
-	height: 3000px;
+	height: 5000px;
 }
 
 .page-container
@@ -63,8 +63,8 @@ hr
 
 .feature-container
 {
-	background-color: #BDC3C7;
-	height: 1000px;
+	background-color: #6C7A89;	
+	height: 1200px;
 	position: relative;
 	top: 450px;
 }
@@ -74,9 +74,32 @@ hr
 	font-family: 'Cinzel', serif;
 	font-size: 90px;
 	position: relative;
-	top: 130px;
+	top: 250px;
 	text-align: center;
-	color: black;
+	color: white;
+}
+
+.feature-list
+{
+	font-size: 35px;
+	font-family: 'Rokkitt', serif;
+	color: white;
+	text-align:left;
+	position: relative;
+	top: 20%;
+	left: 30.33%;
+	width: 40%;
+}
+
+.feature-list li
+{		
+	padding: 15px;
+}
+
+.feature-line
+{
+	position: relative;
+	top: 21%;
 }
 
 @media screen and (max-width: 600px)
@@ -113,9 +136,30 @@ hr
 		font-size: 30px;
 	}
 
+	.feature-container
+	{
+		height: 900px;
+	}
+
 	.feature-container h1
 	{
 		font-size: 60px;
+	}
+
+	.feature-list
+	{
+		position: relative;
+		font-size: 25px;
+		top: 22%;
+		left: 0;
+		width: 100%;
+	}
+
+	.feature-line
+	{
+		position: relative;
+		top: 24.77%;
+		
 	}
 }
 
