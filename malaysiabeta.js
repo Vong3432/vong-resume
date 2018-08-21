@@ -9,12 +9,12 @@
 	}
 	window.addEventListener('load',setupVideo,false);
 })(window);
-*/
+
 
 function openNav()
 {
 	var x = document.getElementById("topStickyBar");
-	var title = document.getElementById('test');
+	var title = document.getElementById('the-title');
     if (x.className === "top-sticky-bar") {
         x.className += " responsive";
         title.style.display = "none";
@@ -22,4 +22,4 @@ function openNav()
         x.className = "top-sticky-bar";
         title.style.display = "block";
     }
-}
+}*/
