@@ -120,15 +120,15 @@ header *
 	margin-left: 5px;
 	margin-right: 5px;
 	padding: 17px;		
-	color: black;
+	color: white;
 	text-decoration: none;
 	font-size: 22px;
 	border-style: 1px solid;
 }
+
 #animate-btm-link 
 {
-    display: inline-block;
-    color: white;
+    display: inline-block;    
     text-decoration: none;
 }
 
@@ -145,6 +145,11 @@ header *
 #animate-btm-link:hover:after
  {
     width: 100%;
+ }
+
+ .icon
+ {
+ 	display: none;
  }
 
 .title
@@ -241,8 +246,9 @@ header *
 		margin-left: 5%;
 	}
 
-	.top-nav a:not(:first-child){display: none;}
-
+	#animate-btm-link {display: none;}
+	.top-nav{position: fixed;left: 0;}
+	.icon{display: block;position: fixed;left: : 0;}
 	.about
 	{
 		background-color: inherit;	
