@@ -178,7 +178,7 @@ header *
 	height: 10%;
 	border-radius: 20px;
 	position: absolute;
-	top: 95%;
+	top: 93%;
 	left: 50%;
 	transform: translate(-50%,-80%);
 }
@@ -260,7 +260,7 @@ header *
 		text-align: left;
 		position: absolute;
 		left: 50%;	
-		margin-left: 40px;
-		margin-right: 0;
+		margin-left: 25%;
+		margin-right: 10%;
 	}
 }
