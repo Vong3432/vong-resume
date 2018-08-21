@@ -241,6 +241,8 @@ header *
 		margin-left: 5%;
 	}
 
+	.top-nav a:not(:first-child){display: none;}
+
 	.about
 	{
 		background-color: inherit;	
