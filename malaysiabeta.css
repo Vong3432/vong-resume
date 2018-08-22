@@ -245,8 +245,8 @@ header *
 	
 	transform: translateZ(-1px) scale(2);
 	position: relative;
-	top: 40%;	
-	z-index: 1;
+	top: 20%;	
+	z-index: -1;
 }
 
 .col
