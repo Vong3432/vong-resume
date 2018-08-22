@@ -180,6 +180,7 @@ header *
 	transform-style: inherit;
 	width: 100vw;
 	height: 100%;
+	position: absolute;
 }
 
 .beta2 h1
@@ -244,8 +245,8 @@ header *
 	width: 99%;
 	
 	transform: translateZ(-1px) scale(2);
-	position: relative;
-	top: 20%;	
+	position: absolute;
+	top: 200%;	
 	z-index: -1;
 }
 
@@ -305,5 +306,23 @@ header *
 		left: 50%;	
 		margin-left: 25%;
 		margin-right: 10%;
+	}
+
+	.beta3
+	{
+		min-height: 0;		
+		position: relative;
+		top: 70%;
+		transform: none;
+	}
+
+	.col h1
+	{
+		font-size: 3vh;
+	}
+
+	.col p
+	{
+		font-size: 2vh;
 	}
 }
