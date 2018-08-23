@@ -380,13 +380,13 @@ header *
 		min-height: 0;	
 		width: 100%;	
 		position: relative;
-		top: 70%;
+		top: 90%;
 		transform: none;
 	}
 
 	.col
 	{
-		width: 100%;
+		width: 100%;		
 	}
 
 
@@ -413,10 +413,11 @@ header *
 		padding: 10px;
 	}
 
+
 	.container
     {
 	  position: relative;
-	  top: 92.77%;	
+	  top: 120%;	
     }
 
 }
