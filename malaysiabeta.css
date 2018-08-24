@@ -347,6 +347,8 @@ header *
 {
 	filter: brightness(100%);
 	font-weight: bolder;
+	-webkit-animation:stateMove 3s;
+	-webkit-animation-fill-mode:forwards;
 	animation: stateMove 3s;
 	animation-fill-mode: forwards;
 }
@@ -356,6 +358,8 @@ header *
 }
 .slide:nth-child(1):hover,.slide:nth-child(1):hover .j-describe
 {
+	-webkit-animation:fromBot 3s;
+	-webkit-animation-fill-mode:forwards;
 	animation: fromBot 3s;
 	animation-fill-mode: forwards;
 }
@@ -366,11 +370,15 @@ header *
 {
 	filter: brightness(100%);
 	font-weight: bolder;
+	-webkit-animation:stateMove 3s;
+	-webkit-animation-fill-mode:forwards;
 	animation: stateMove 3s;
 	animation-fill-mode: forwards;
 }
 .slide:nth-child(2):hover,.slide:nth-child(2):hover .j-describe
 {
+	-webkit-animation:fromBot 3s;
+	-webkit-animation-fill-mode:forwards;
 	animation: fromBot 3s;
 	animation-fill-mode: forwards;
 }
@@ -381,11 +389,15 @@ header *
 {
 	filter: brightness(100%);
 	font-weight: bolder;
+	-webkit-animation:stateMove 3s;
+	-webkit-animation-fill-mode:forwards;
 	animation: stateMove 3s;
 	animation-fill-mode: forwards;
 }
 .slide:nth-child(3):hover,.slide:nth-child(3):hover .j-describe
 {
+	-webkit-animation:fromBot 3s;
+	-webkit-animation-fill-mode:forwards;
 	animation: fromBot 3s;
 	animation-fill-mode: forwards;
 }
@@ -396,11 +408,15 @@ header *
 {
 	filter: brightness(100%);
 	font-weight: bolder;
+	-webkit-animation:stateMove 3s;
+	-webkit-animation-fill-mode:forwards;
 	animation: stateMove 3s;
 	animation-fill-mode: forwards;
 }
 .slide:nth-child(4):hover,.slide:nth-child(4):hover .j-describe
 {
+	-webkit-animation:fromBot 3s;
+	-webkit-animation-fill-mode:forwards;
 	animation: fromBot 3s;
 	animation-fill-mode: forwards;
 }
@@ -411,13 +427,23 @@ header *
 {
 	filter: brightness(100%);
 	font-weight: bolder;
+	-webkit-animation:stateMove 3s;
+	-webkit-animation-fill-mode:forwards;
 	animation: stateMove 3s;
 	animation-fill-mode: forwards;
 }
 .slide:nth-child(5):hover,.slide:nth-child(5):hover .j-describe
 {
+	-webkit-animation:fromBot 3s;
+	-webkit-animation-fill-mode:forwards;
 	animation: fromBot 3s;
 	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes stateMove
+{
+	0% {top: 0%;}
+	100%{top: 35%;}
 }
 
 @keyframes stateMove
@@ -427,6 +453,12 @@ header *
 }
 
 @keyframes fromBot
+{
+	0% {bottom: 0%;}
+	100%{bottom: 15%;}
+}
+
+@-webkit-keyframes fromBot
 {
 	0% {bottom: 0%;}
 	100%{bottom: 15%;}
