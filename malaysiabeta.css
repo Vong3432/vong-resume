@@ -330,6 +330,7 @@ header *
 	left: 10%;
 	height: 50%;
 	border-radius: 15px;
+	margin: 5px;
 }
 
 .slide p
@@ -589,7 +590,10 @@ header *
     	height: 50%;
     	position: relative;
     	top: 20%;
-    	margin-top: 5%;
+    	margin-top: 10px;
+    	margin-left: 0;
+    	margin-right: 0;
+    	margin-bottom: 0;
     	bottom: -40%;
     	left: 0;
     }
