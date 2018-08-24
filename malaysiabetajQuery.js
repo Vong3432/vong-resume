@@ -4,6 +4,9 @@ $(function()
 	$(".title").fadeIn(5000);
 	$(".slow-title").delay(2000).fadeIn(1500);
 	$(".top-sticky-bar").fadeIn(2000);
+
+	
+
 });
 
 /*

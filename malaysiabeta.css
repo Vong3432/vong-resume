@@ -20,6 +20,7 @@ body
 	transform-style: preserve-3d;
 	overflow-y: scroll;
 	overflow-x: hidden;	
+	scroll-behavior: smooth;
 }
 
 header
@@ -292,8 +293,7 @@ header *
 
 .container
 {
-	width: 100%;
-	background-color: #3A539B;	
+	width: 100%;	
 	position: absolute;
 	top: 300%;	
 	height: 1000px;	
@@ -302,16 +302,134 @@ header *
 .test-svg
 {
 	position: relative;
-	left:50%;
-	top: -13%;
+	left:37.77%;
+	top: -20%;
 	z-index: 1;
-	transform: translate(-50%,-13%);
-}
-
-.test-svg
-{
 	stroke-dasharray:2;
 	animation: animate infinite 6s;
+}
+
+
+#mySlide
+{
+	position: relative;
+	top: 200%;
+	width: 100%;
+	height: 100%;
+}
+
+.slide
+{
+	float: left;
+	background-size: cover;
+	width: 50%;
+	height: 90%;
+}
+
+.slide p
+{
+	color: white;
+	font-size: 5vh;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.j-describe
+{
+	position: absolute;
+	bottom: 0;
+}
+
+/*          Child 1                  */
+.slide:nth-child(1){background-image: url(image/1.jpg);filter: brightness(50%);}
+.slide:nth-child(1):hover,.slide:nth-child(1):hover p
+{
+	filter: brightness(100%);
+	font-weight: bolder;
+	animation: stateMove 3s;
+	animation-fill-mode: forwards;
+}
+.slide:nth-child(1):hover
+{
+	
+}
+.slide:nth-child(1):hover,.slide:nth-child(1):hover .j-describe
+{
+	animation: fromBot 3s;
+	animation-fill-mode: forwards;
+}
+
+/*           Child 2                  */
+.slide:nth-child(2){background-image: url(image/2.jpg);filter: brightness(50%);}
+.slide:nth-child(2):hover,.slide:nth-child(2):hover p
+{
+	filter: brightness(100%);
+	font-weight: bolder;
+	animation: stateMove 3s;
+	animation-fill-mode: forwards;
+}
+.slide:nth-child(2):hover,.slide:nth-child(2):hover .j-describe
+{
+	animation: fromBot 3s;
+	animation-fill-mode: forwards;
+}
+
+/*            Child 3                  */
+.slide:nth-child(3){background-image: url(image/3.jpg);filter: brightness(50%);}
+.slide:nth-child(3):hover,.slide:nth-child(3):hover p
+{
+	filter: brightness(100%);
+	font-weight: bolder;
+	animation: stateMove 3s;
+	animation-fill-mode: forwards;
+}
+.slide:nth-child(3):hover,.slide:nth-child(3):hover .j-describe
+{
+	animation: fromBot 3s;
+	animation-fill-mode: forwards;
+}
+
+/*             Child 4                     */
+.slide:nth-child(4){background-image: url(image/4.jpg);filter: brightness(50%);}
+.slide:nth-child(4):hover,.slide:nth-child(4):hover p
+{
+	filter: brightness(100%);
+	font-weight: bolder;
+	animation: stateMove 3s;
+	animation-fill-mode: forwards;
+}
+.slide:nth-child(4):hover,.slide:nth-child(4):hover .j-describe
+{
+	animation: fromBot 3s;
+	animation-fill-mode: forwards;
+}
+
+/*               Child 5                     */
+.slide:nth-child(5){background-image: url(image/5.jpg);filter: brightness(50%);}
+.slide:nth-child(5):hover,.slide:nth-child(5):hover p
+{
+	filter: brightness(100%);
+	font-weight: bolder;
+	animation: stateMove 3s;
+	animation-fill-mode: forwards;
+}
+.slide:nth-child(5):hover,.slide:nth-child(5):hover .j-describe
+{
+	animation: fromBot 3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes stateMove
+{
+	0% {top: 0%;}
+	100%{top: 35%;}
+}
+
+@keyframes fromBot
+{
+	0% {bottom: 0%;}
+	100%{bottom: 15%;}
 }
 
 @keyframes animate
@@ -337,9 +455,9 @@ header *
 
 @media screen and (max-width: 600px)
 {
-	body
+	body,html
 	{
-		background-color: rgba(0,0,0);
+		background-color: black;
 	}
 	.title
 	{
@@ -350,7 +468,7 @@ header *
 
 	#animate-btm-link {display: none;}
 	.top-nav{position: fixed;left: 0;}
-	.icon{display: block;position: fixed;left: : 0;}
+	.icon{display: block;position: fixed;left: : 0;z-index: 1;}
 	.about
 	{
 		background-color: inherit;	
@@ -379,8 +497,8 @@ header *
 	{
 		min-height: 0;	
 		width: 100%;	
-		position: relative;
-		top: 90%;
+		position: absolute;
+		top: 200%;
 		transform: none;
 	}
 
@@ -409,15 +527,36 @@ header *
 	{
 		top: 0;
 		background-color: rgba(0,0,0,0.9);	
-		height: auto;
+		height: all;
 		padding: 10px;
 	}
 
-
 	.container
     {
-	  position: relative;
-	  top: 120%;	
+      margin-top: 1px;
+	  position: absolute;
+	  top: 330%;		  
     }
 
+    #mySlide
+    {
+    	position: absolute;
+    	top: 345%;
+    }
+
+    .slide
+    {
+    	width: 100%;
+    	height: 50%;
+    }
+    .test-svg
+    {
+    	position: absolute;
+    	left: 0;
+    	width: 100%;
+    }
+    svg
+    {
+    	width: 100%;
+    }
 }
