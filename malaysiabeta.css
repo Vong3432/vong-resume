@@ -487,6 +487,7 @@ header *
 
 @media screen and (max-width: 600px)
 {
+
 	body,html
 	{
 		background-color: black;
@@ -584,13 +585,13 @@ header *
 
     .slide p
     {
+    	text-align: center;
     	position: relative;
     }
 
     .j-describe
     {
     	position: relative;
-    	top: 20%;
     }
 
     .test-svg
@@ -603,4 +604,15 @@ header *
     {
     	width: 100%;
     }
+    @keyframes fromBot
+	{
+		0% {top: 0%;}
+		100%{top: 20%;}
+	}
+
+	@-webkit-keyframes fromBot
+	{
+		0% {top: 0%;}
+		100%{top: 20%;}
+	}
 }
