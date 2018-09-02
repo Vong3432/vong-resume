@@ -291,31 +291,12 @@ header *
 		word-wrap: break-word;			
 	}
 
-.container
-{
-	width: 100%;	
-	position: absolute;
-	top: 300%;	
-	height: 3000px;	
-	background-color: rgba(34, 49, 63);
-}
-
-.test-svg
-{
-	position: relative;
-	left:37.77%;
-	width: 100%;
-	top: -7.77%;
-	z-index: 1;
-	stroke-dasharray:2;
-	animation: animate infinite 6s;
-}
 
 
 #mySlide
 {
 	position: absolute;
-	top: 310%;
+	top: 400%;
 	width: 100%;
 	height: 100%;
 }
@@ -348,104 +329,17 @@ header *
 	bottom: 0;
 }
 
-/*          Child 1                  */
-.slide:nth-child(1){background-image: url(image/1.jpg);filter: brightness(50%);}
-.slide:nth-child(1):hover,.slide:nth-child(1):hover p
+.footer
 {
-	filter: brightness(100%);
-	font-weight: bolder;
-	-webkit-animation:stateMove 3s;
-	-webkit-animation-fill-mode:forwards;
-	animation: stateMove 3s;
-	animation-fill-mode: forwards;
-}
-.slide:nth-child(1):hover
-{
-	
-}
-.slide:nth-child(1):hover,.slide:nth-child(1):hover .j-describe
-{
-	-webkit-animation:fromBot 3s;
-	-webkit-animation-fill-mode:forwards;
-	animation: fromBot 3s;
-	animation-fill-mode: forwards;
+	background-color: gray;
+	position: absolute;
+	width: 100%;
+	top: 800%;
+	height: 100px;
 }
 
-/*           Child 2                  */
-.slide:nth-child(2){background-image: url(image/2.jpg);filter: brightness(50%);}
-.slide:nth-child(2):hover,.slide:nth-child(2):hover p
-{
-	filter: brightness(100%);
-	font-weight: bolder;
-	-webkit-animation:stateMove 3s;
-	-webkit-animation-fill-mode:forwards;
-	animation: stateMove 3s;
-	animation-fill-mode: forwards;
-}
-.slide:nth-child(2):hover,.slide:nth-child(2):hover .j-describe
-{
-	-webkit-animation:fromBot 3s;
-	-webkit-animation-fill-mode:forwards;
-	animation: fromBot 3s;
-	animation-fill-mode: forwards;
-}
 
-/*            Child 3                  */
-.slide:nth-child(3){background-image: url(image/3.jpg);filter: brightness(50%);}
-.slide:nth-child(3):hover,.slide:nth-child(3):hover p
-{
-	filter: brightness(100%);
-	font-weight: bolder;
-	-webkit-animation:stateMove 3s;
-	-webkit-animation-fill-mode:forwards;
-	animation: stateMove 3s;
-	animation-fill-mode: forwards;
-}
-.slide:nth-child(3):hover,.slide:nth-child(3):hover .j-describe
-{
-	-webkit-animation:fromBot 3s;
-	-webkit-animation-fill-mode:forwards;
-	animation: fromBot 3s;
-	animation-fill-mode: forwards;
-}
 
-/*             Child 4                     */
-.slide:nth-child(4){background-image: url(image/4.jpg);filter: brightness(50%);}
-.slide:nth-child(4):hover,.slide:nth-child(4):hover p
-{
-	filter: brightness(100%);
-	font-weight: bolder;
-	-webkit-animation:stateMove 3s;
-	-webkit-animation-fill-mode:forwards;
-	animation: stateMove 3s;
-	animation-fill-mode: forwards;
-}
-.slide:nth-child(4):hover,.slide:nth-child(4):hover .j-describe
-{
-	-webkit-animation:fromBot 3s;
-	-webkit-animation-fill-mode:forwards;
-	animation: fromBot 3s;
-	animation-fill-mode: forwards;
-}
-
-/*               Child 5                     */
-.slide:nth-child(5){background-image: url(image/5.jpg);filter: brightness(50%);}
-.slide:nth-child(5):hover,.slide:nth-child(5):hover p
-{
-	filter: brightness(100%);
-	font-weight: bolder;
-	-webkit-animation:stateMove 3s;
-	-webkit-animation-fill-mode:forwards;
-	animation: stateMove 3s;
-	animation-fill-mode: forwards;
-}
-.slide:nth-child(5):hover,.slide:nth-child(5):hover .j-describe
-{
-	-webkit-animation:fromBot 3s;
-	-webkit-animation-fill-mode:forwards;
-	animation: fromBot 3s;
-	animation-fill-mode: forwards;
-}
 
 @-webkit-keyframes stateMove
 {
@@ -471,26 +365,6 @@ header *
 	100%{bottom: 15%;}
 }
 
-@keyframes animate
-{
-	0%{
-		stroke-dasharray: 2;
-	}
-
-	30%
-	{
-		stroke-dasharray: 100;
-	}
-	90%
-	{
-		stroke-dasharray: 350;
-	}
-	100%
-	{
-
-		stroke-dasharray: 400;
-	}
-}
 
 @media screen and (max-width: 600px)
 {
@@ -581,7 +455,7 @@ header *
     #mySlide
     {
     	position: absolute;
-    	top: 350%;
+    	top: 330%;
     }
 
     .slide
@@ -602,32 +476,13 @@ header *
     {
     	text-align: center;
     	position: relative;
+    	bottom: 0;
     }
 
     .j-describe
     {
     	position: relative;
-    }
+    	top: 50%;
+    }    
 
-    .test-svg
-    {
-    	position: absolute;
-    	left: 0;
-    	width: 100%;
-    }
-    svg
-    {
-    	width: 100%;
-    }
-    @keyframes fromBot
-	{
-		0% {top: 0%;}
-		100%{top: 20%;}
-	}
-
-	@-webkit-keyframes fromBot
-	{
-		0% {top: 0%;}
-		100%{top: 20%;}
-	}
 }

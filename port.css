@@ -1,107 +1,41 @@
-body
+#dropdown1 li a
 {
-	width: 100%;	
 	color: white;
-	background-image:  linear-gradient(black, #6C7A89);
 }
 
-body,html
+#dropdown1 li a:hover
 {
-	margin: 0 auto;
-	height: 100%;
+	background-color: #546e7a;	
 }
 
-.hero-image
+.col
 {
-	width: 100%;
+	margin-top: -100px;
 }
 
-.hero-image
+.card
 {
-	background-image: url(image/heroimage.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	position: relative;
-	background-size: cover;
-	height: 50%;
+	width: 50%;
+	position: relative;	
+	left: 25%;	
+	height: 500px;
 }
 
-.hero-text
+.card-title
 {
 	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	margin-left: 50px;
 }
 
-.hero-text h1
+@media screen and (max-width: 600px)
 {
-	font-size: 5vh;
-	font-family: 'Abril Fatface', cursive;
-	letter-spacing: 5px;
-}
+	.card
+	{
+		width: 100%;
+	}
 
-.hero-text p
-{
-	font-size: 3vh;
-	font-family: 'Tinos', serif;
-	letter-spacing: 1px;
+	.card-title
+	{
+		margin-left: 0px;
+	}
 }
-
-.info
-{
-	
-	
-	margin-top: 230px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
-}
-.info p
-{
-	font-family: 'Gentium Basic', serif;
-	font-size: 4vh;
-	margin-left: 10px;
-	margin-right: 10px;
-}
-.info h1
-{
-	font-size: 5vh;
-	text-align: center;
-}
-
-.skill-container
-{
-	position: relative;
-	margin-top: 100px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-}
-
-
-.skill h1
-{
-	text-align: center;
-	font-size: 6vh;
-}
-
-.skill ul
-{
-	position: absolute;
-	margin-top: 200px;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
-}
-
-.skill li
-{
-	list-style-type: square;
-	font-size: 30px;
-	letter-spacing: 2px;
-	font-family: Arial;
-}
-
