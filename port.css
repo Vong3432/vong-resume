@@ -1,3 +1,8 @@
+body
+{
+	overflow-x: hidden;
+}
+
 #dropdown1 li a
 {
 	color: white;
@@ -25,6 +30,18 @@
 {
 	text-align: center;
 	margin-left: 50px;
+}
+
+.introduce-icon
+{
+	text-align: center;
+	margin-top: 10%;
+	font-size: 3vh;
+}
+
+.introduce-icon li
+{
+	margin-top: 10px;
 }
 
 @media screen and (max-width: 600px)
