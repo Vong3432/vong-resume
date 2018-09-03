@@ -7,6 +7,7 @@ $(document).ready(function(){
 	$('.introduce-icon').hide();
 	$('.carousel.carousel-slider').carousel({
 		//  anything to set
+		fullWidth:true
 	}).hide();
 });
 
