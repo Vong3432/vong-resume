@@ -1,20 +1,28 @@
 $(document).ready(function(){
+	//Jquery function
 	$(".dropdown-trigger").dropdown({
 		hover:true
-	});
+	});	
 	$('.parallax').parallax();
+	$('.timepicker').timepicker().hide();
+
+
+	//HTML class Tag
 	$('#aboutZoomIn').hide();
 	$('.introduce-icon').hide();
 	$('.carousel.carousel-slider').carousel({
 		//  anything to set
 		fullWidth:true
 	}).hide();
+	$('.contact-container').hide();	
+	$('#submit').hide();
 });
 
 $(document).on('scroll', function() {
-    if($(this).scrollTop()>=$('.card').position().top){
+    if( $(this).scrollTop() >= $('.card').position().top ){
     	$('#aboutZoomIn').show();
-    	$('.introduce-icon').show();    	
+    	$('.introduce-icon').show();
+    	$('.contact-container').show();    	
         $('#aboutZoomIn').addClass('animated zoomIn slow'); 
         $('.introduce-icon').addClass('animated fadeInLeft slow'); 
 
@@ -25,3 +33,18 @@ $(document).on('scroll', function() {
     	}
     }  	    
 });
+
+
+function popUpTime(){
+
+	$('.timepicker').timepicker().show(1500);
+	$('.timepicker').addClass('animated fadeInUpBig slower');
+
+	//button bye bye
+	$('.next').hide();	
+
+	//welcome submit
+	$('#submit').show(1500);
+	$('#submit').addClass('animated slideInUp slower');
+
+}

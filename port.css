@@ -44,6 +44,41 @@ body
 	margin-top: 10px;
 }
 
+.contact-container
+{
+	margin-top: 20%;
+}
+
+.contact
+{
+	margin-top: 0;
+}
+
+.contact.small p
+{
+	font-size: 4vh;
+}
+
+.contact.big button.next,.contact.big input[type=submit]
+{
+	border-radius: 15px;
+	padding: 17px;
+	font-size: 3vh;
+	background-color: white;
+	border-style: none;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+
+.contact.big button.next:hover,.contact.big input[type=submit]:hover
+{
+	cursor: pointer;
+	color: #1de9b6;
+	background-color: white;
+	transition: 1.5s;
+}
+
 @media screen and (max-width: 600px)
 {
 	.card
